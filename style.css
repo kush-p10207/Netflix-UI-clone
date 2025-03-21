@@ -27,7 +27,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 60vw;
+  max-width: 81vw;
   margin: auto;
   height: 70px;
 }
@@ -91,15 +91,17 @@ nav button {
   font-weight: 500;
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.337);
   border-radius: 4px;
   cursor: pointer;
 }
 .btn-red-1 {
   background-color: rgb(229, 9, 20);
   color: white;
+  border: none;
 }
 .btn-red-2 {
+  border: none;
   background-color: rgb(229, 9, 20);
   color: white;
   padding: 11px 50px;
@@ -157,11 +159,6 @@ nav button {
 .first > div :nth-child(2){
   font-size: 24px;
 }
-/* .fourth > div{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
 .faq h2{
   text-align: center;
   font-size: 48px;
@@ -208,6 +205,11 @@ footer a{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
 }
+.footer-item{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  }
 @media screen and (max-width: 1300px){
   .footer{
     display: grid;
@@ -241,8 +243,6 @@ footer a{
   .faq h2{
     font-size: 32px;
   }
-}
-@media screen and (max-width: 1300px) {
   .first{
     flex-wrap: wrap;
   }
@@ -253,5 +253,15 @@ footer a{
     top: 83px;
     right: 4px;
     width: 266px;  
+  }
+}
+@media screen and (max-width: 380px) {
+  .main input {
+    padding: 16px 175px 16px 8px;
+    font-size: 10px;
+  }
+  .btn-red-2 {
+    padding: 5px 10px;
+    font-size: 14px;
   }
 }
